@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div>
+    <div className='text-center font-poppins font-extrabold text-8xl italic'>
       Age Calculator
     </div>
   );
