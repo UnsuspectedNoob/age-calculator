@@ -23,6 +23,7 @@ function DateInput({name, id, state, setState}) {
           console.log(value)
           setState(value)
         }}
+        placeholder={`${id[0]}${id[0]}`.toUpperCase()}
       />
     </div>
   );
