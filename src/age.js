@@ -6,7 +6,15 @@ export const age = function(day, month, year) {
   let millis = Date.now() - (new Date(year, monthIndex, day)).getTime();
   let secs = Math.floor(millis / 1000);
   let hours = Math.floor(secs / 3600);
-  let days = Math.floor(hours / 24) - Math.floor(((new Date()).getFullYear() - year) / 4);
+  let difference = (new Date()).getFullYear() - year;
+
+  let days = Math.floor(hours / 24) - Math.floor(difference / 4);
+
+  let d400 = Math.floor(difference / 400);
+  let d100 = Math.floor(difference / 100);
+
+  let totalDifference = d400 - d100;
+  days -= totalDifference - (d100 % 4 === 0 ? 1 : 0);
   let years = Math.floor(days / 365);
 
   days =  days % 365;
