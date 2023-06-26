@@ -32,7 +32,7 @@ function App() {
     <div
       className='font-poppins bg-white py-10 rounded-xl border-e-blue-100 px-6 max-w-3xl rounded-br-[96px]'>
 
-      <form action=''>
+      <form action='#'>
 
         <div className='flex gap-x-3 mb-16'>
           <DateInput
