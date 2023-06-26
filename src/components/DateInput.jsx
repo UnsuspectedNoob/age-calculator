@@ -16,6 +16,7 @@ function DateInput({name, id, state, setState}) {
 
       <input
         id={`${id}`}
+        required
         type="number"
         className='w-full border border-neutral-l-grey p-3 rounded-md text-neutral-off-black text-xl uppercase font-extrabold outline-none focus:border-primary-purple transition'
         onChange={() => {

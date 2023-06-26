@@ -6,10 +6,10 @@ export const age = function(day, month, year) {
   let millis = Date.now() - (new Date(year, monthIndex, day)).getTime();
   let secs = Math.floor(millis / 1000);
   let hours = Math.floor(secs / 3600);
-  let days = Math.floor(hours / 24);
+  let days = Math.floor(hours / 24) - Math.floor(((new Date()).getFullYear() - year) / 4);
   let years = Math.floor(days / 365);
 
-  days = ( days % 365 ) - Math.floor(((new Date()).getFullYear() - year) / 4);
+  days =  days % 365;
   let daysSpent = days;
 
   let monthsSpent = 0;
