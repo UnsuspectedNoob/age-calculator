@@ -19,7 +19,7 @@ function DateInput({name, id, state, setState}) {
         type="number"
         className='w-full border border-neutral-l-grey p-3 rounded-md text-neutral-off-black text-xl uppercase font-extrabold outline-none focus:border-primary-purple transition'
         onChange={() => {
-          let value = document.getElementById(`${id}`).value
+          let value = Number(document.getElementById(`${id}`).value)
           console.log(value)
           setState(value)
         }}
