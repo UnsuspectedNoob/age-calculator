@@ -45,5 +45,3 @@ export const age = function(day, month, year) {
     }
   };
 }
-
-console.log(age(5, 3, 2002))
