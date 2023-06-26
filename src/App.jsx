@@ -46,7 +46,7 @@ function App() {
         </div>
       </div>
 
-      <div className='my-6 pr-3 text-neutral-off-black'>
+      <div className='my-6 text-neutral-off-black'>
         <p className='text-6xl whitespace-nowrap font-extrabold italic'>
           <span className='text-primary-purple'>38</span> years
         </p>
