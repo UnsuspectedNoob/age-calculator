@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DateInput from './components/DateInput';
 import { icon } from './assets/images';
 import { age } from "./age"
@@ -18,15 +18,23 @@ function App() {
   const [monthsLeft, setMonthsLeft] = useState(0);
   const [daysLeft, setDaysLeft] = useState(0);
 
+  function validForm() {
+    return true;
+  }
+
   function handleClick() {
-    let { years, months, days, birthday } = age(day, month, year)
-    setAgeDays(days)
-    setAgeMonths(months)
-    setAgeYears(years)
-    setDaysLeft(birthday.days)
-    setMonthsLeft(birthday.months)
-    setDisplay(false)
-}
+    if (validForm()) {
+      let { years, months, days, birthday } = age(day, month, year)
+      setAgeDays(days)
+      setAgeMonths(months)
+      setAgeYears(years)
+      setDaysLeft(birthday.days)
+      setMonthsLeft(birthday.months)
+      setDisplay(false)
+    } else {
+      return
+    }
+  }
 
   return (
     <div

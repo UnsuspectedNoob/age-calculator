@@ -14,8 +14,9 @@ function Birthday({display, setDisplay, monthsLeft, daysLeft}) {
       
       <p className={`${!display ? 'hidden' : 'block'} mt-3 text-sm text-center font-bold text-neutral-700`}>
         Your next birthday is<br />
-        {!monthsLeft || monthsLeft == 12 ? '' : `in ${monthsLeft} month${monthsLeft == 1 ? '' : 's'}`} {
-          !monthsLeft ? '' : `${monthsLeft !== 0 && daysLeft != 0 ? 'and' : '.'}`} {
+        {!monthsLeft || monthsLeft == 12 ? '' : `in ${monthsLeft} month${monthsLeft == 1 ? '' : 's'}`}{
+          !monthsLeft ? '' : `${monthsLeft !== 0 && daysLeft != 0 ? ' and ' : '.'}`}{ 
+            monthsLeft === 0 && daysLeft !== 0 ? ' in ' : '' }{
           !daysLeft ? '' : `${daysLeft} day${daysLeft == 1 ? '' : 's'}.`}
       </p>
     </div>
