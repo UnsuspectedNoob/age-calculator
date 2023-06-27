@@ -76,7 +76,7 @@ function App() {
       </form>
 
 
-      <div className='flex flex-col md:flex-row md:items-center'>
+      <div className='flex flex-col md:flex-row md:items-center lg:justify-between lg:pr-5'>
         <div className='my-6 text-neutral-off-black'>
           <p className='text-6xl whitespace-nowrap font-extrabold italic'>
             <span className='text-primary-purple'>{ageYears}</span> year{ageYears == 1 ? '' : 's'}
