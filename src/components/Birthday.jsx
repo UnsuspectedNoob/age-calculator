@@ -9,7 +9,7 @@ function Birthday({display, setDisplay, monthsLeft, daysLeft}) {
         }}
         className={`border border-primary-purple px-3 py-2 rounded hover:text-primary-purple w-1/2 self-center bg-primary-purple text-neutral-off-white hover:bg-neutral-off-white transition text-sm focus:ring-1 focus:ring-primary-purple lg:w-full`}
       >
-        {display ? "Hide" : "Show"} Birthday
+        {display ? "Hide" : "Show Next"} Birthday
       </button>
       
       <p className={`${!display ? 'opacity-0' : 'opacity-100'} transition mt-3 text-sm text-center font-bold text-neutral-700`}>
