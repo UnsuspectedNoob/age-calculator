@@ -40,26 +40,23 @@ function App() {
     <div
       className='font-poppins bg-white py-10 rounded-xl border-e-blue-100 px-6 max-w-3xl rounded-br-[96px]'>
 
-      <form action='#'>
+      <div action='#'>
 
         <div className='flex gap-x-3 mb-16'>
           <DateInput
             id={'day'}
-            name={'day'}
             state={day}
             setState={setDay}
           />
 
           <DateInput
             id={'month'}
-            name={'month'}
             state={month}
             setState={setMonth}
           />
 
           <DateInput
             id={'year'}
-            name={'year'}
             state={year}
             setState={setYear}
           />
@@ -73,7 +70,7 @@ function App() {
             <img src={icon} alt="icon" />
           </button>
         </div>
-      </form>
+      </div>
 
 
       <div className='flex flex-col md:flex-row md:items-center lg:justify-between lg:pr-5'>

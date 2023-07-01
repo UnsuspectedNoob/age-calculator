@@ -11,7 +11,7 @@ function DateInput({name, id, state, setState}) {
         htmlFor={`${id}`}
         className='block uppercase tracking-[3px] text-xs font-bold text-neutral-smokey-gray mb-1'
       >
-        {name}
+        {id}
       </label>
 
       <input
