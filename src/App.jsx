@@ -42,7 +42,7 @@ function App() {
 
       <div action='#'>
 
-        <div className='flex gap-x-3 mb-16'>
+        <div className='flex gap-x-3 mb-16 '>
           <DateInput
             id={'day'}
             state={day}
@@ -62,26 +62,26 @@ function App() {
           />
         </div>
 
-        <div className='flex justify-center border-t border-neutral-l-grey'>
+        <div className='flex justify-center border-t border-neutral-l-grey lg:justify-end'>
           <button
             onClick={handleClick}
             type='submit'
-            className='transition duration-300 flex justify-center items-center bg-primary-purple w-16 h-16 rounded-full p-4 -mt-8 hover:bg-neutral-off-black'>
+            className='transition duration-300 flex justify-center items-center bg-primary-purple w-16 h-16 rounded-full p-4 -mt-8 hover:bg-neutral-off-black lg:w-20 lg:h-20'>
             <img src={icon} alt="icon" />
           </button>
         </div>
       </div>
 
 
-      <div className='flex flex-col md:flex-row md:items-center lg:justify-between lg:pr-5'>
+      <div className='flex flex-col lg:flex-row md:items-center lg:justify-between lg:pr-5'>
         <div className='my-6 text-neutral-off-black'>
-          <p className='text-6xl whitespace-nowrap font-extrabold italic'>
+          <p className='text-6xl whitespace-nowrap font-extrabold italic lg:text-8xl'>
             <span className='text-primary-purple'>{ageYears}</span> year{ageYears == 1 ? '' : 's'}
           </p>
-          <p className='text-6xl whitespace-nowrap font-extrabold italic'>
+          <p className='text-6xl whitespace-nowrap font-extrabold italic lg:text-8xl'>
             <span className='text-primary-purple'>{ageMonths}</span> month{ageMonths == 1 ? '' : 's'}
           </p>
-          <p className='text-6xl whitespace-nowrap font-extrabold italic'>
+          <p className='text-6xl whitespace-nowrap font-extrabold italic lg:text-8xl'>
             <span className='text-primary-purple'>{ageDays}</span> day{ageDays == 1 ? '' : 's'}
           </p>
         </div>
