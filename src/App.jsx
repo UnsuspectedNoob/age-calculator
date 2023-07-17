@@ -21,7 +21,8 @@ function App() {
     return true;
   }
 
-  function handleClick() {
+  function handleClick(event) {
+    event.preventDefault();
     if (validForm()) {
       let { years, months, days, birthday } = age(day, month, year);
       setAgeDays(days);
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <div className="font-poppins bg-white py-10 rounded-xl border-e-blue-100 px-6 max-w-3xl rounded-br-[96px]">
-      <div action="#">
+      <form action="#">
         <div className="flex gap-x-3 mb-16 ">
           <DateInput id={"day"} state={day} setState={setDay} />
 
@@ -55,7 +56,7 @@ function App() {
             <img src={icon} alt="icon" />
           </button>
         </div>
-      </div>
+      </form>
 
       <div className="flex flex-col lg:flex-row md:items-center lg:justify-between lg:pr-5">
         <div className="my-6 text-neutral-off-black">
