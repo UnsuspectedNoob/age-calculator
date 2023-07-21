@@ -17,6 +17,7 @@ function App() {
   const [monthsLeft, setMonthsLeft] = useState(0);
   const [daysLeft, setDaysLeft] = useState(0);
 
+  // Validate form function.
   function validForm() {
     return true;
   }
